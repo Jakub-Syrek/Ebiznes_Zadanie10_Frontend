@@ -1,5 +1,5 @@
 # Step 1: Build the React application
-FROM node:16 AS build
+FROM node:14
 
 WORKDIR /Frontend/
 
@@ -10,8 +10,6 @@ RUN npm install
 
 # Copy the application code
 COPY . .
-
-RUN npm run build
 
 # Step 2: Serve the React application from Nginx
 FROM nginx:alpine
