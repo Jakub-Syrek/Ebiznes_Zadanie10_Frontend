@@ -28,7 +28,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: Frontend/Dockerfile
+        file: ./Dockerfile
         push: true
         tags: 289272766788.dkr.ecr.eu-central-1.amazonaws.com/frontend-docker:${{ github.sha }}
           

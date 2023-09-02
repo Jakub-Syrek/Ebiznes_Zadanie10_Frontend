@@ -3,10 +3,10 @@ FROM node:16 AS build
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY Frontend/package*.json ./
 RUN npm install
 
-COPY . .
+COPY Frontend/ .
 RUN npm run build
 
 # Step 2: Serve the React application from Nginx
