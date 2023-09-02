@@ -1,0 +1,19 @@
+{
+    "family": "my-task-definition1",
+    "containerDefinitions": [
+      {
+        "name": "my-container1",
+        "image": "289272766788.dkr.ecr.eu-central-1.amazonaws.com/frontend-docker:latest",
+        "memory": 512,
+        "cpu": 256,
+        "essential": true,
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ]
+      }
+    ]
+  }
+  
