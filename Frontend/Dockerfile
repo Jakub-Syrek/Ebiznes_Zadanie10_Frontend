@@ -1,17 +1,12 @@
 # Step 1: Build the React application
-FROM node:14 AS build
+FROM node:16 AS build
 
 WORKDIR /app
 
 COPY package*.json ./
-
-# Install the dependencies
 RUN npm install
 
-# Copy the application code
 COPY . .
-
-# Build the application
 RUN npm run build
 
 # Step 2: Serve the React application from Nginx
