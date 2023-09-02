@@ -11,3 +11,5 @@ aws ecs create-cluster --cluster-name my-cluster-1
 aws ecs register-task-definition --cli-input-json file://ecs-task-definition.json
 
 aws ecs create-service --cluster my-cluster-1 --service-name my-service2 --task-definition my-task-definition1 --desired-count 1 --launch-type EC2
+
+https://github.com/Jakub-Syrek/Ebiznes_Zadanie10_Frontend/actions/workflows/deploy.yml
