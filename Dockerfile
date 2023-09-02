@@ -1,7 +1,7 @@
 # Step 1: Build the React application
 FROM node:14 AS build
 
-WORKDIR /Frontend/app
+WORKDIR /app
 
 COPY package*.json ./
 
